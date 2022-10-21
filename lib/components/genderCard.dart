@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
+import 'constance.dart';
 
-const TextStyle lebelStyle = TextStyle(color: Color.fromARGB(255, 142, 141, 141), fontSize: 16, letterSpacing: 2.0);
+
 
 class GenderCard extends StatelessWidget {
 
@@ -12,6 +13,7 @@ class GenderCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       mainAxisAlignment: MainAxisAlignment.center,
+      crossAxisAlignment: CrossAxisAlignment.center,
       children: <Widget>[
           Icon(
             icon, 
@@ -20,7 +22,7 @@ class GenderCard extends StatelessWidget {
             ),
             const SizedBox(height: 10),
             Text(label,
-            style: lebelStyle)
+            style: kLebelStyle)
       ],
     );
   }
